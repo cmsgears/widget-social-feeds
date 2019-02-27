@@ -8,4 +8,6 @@ Description - The Social Feeds widget for CMSGears.
 
 Highlighted Features
 =========================================
-1. It allows site admins to display social network feeds on their own site.
+1. Instagram Widget can be used to show most recent Instagram Posts of an Account. It needs a valid Instagram Access Token.
+2. Tweets Widget can be used to show most recent Tweets of an Account. It also need SNS Connect Plugin of CMSGears to access Twitter configuration.
+3. Facebook Widget can be used to show most recent Posts. It also need SNS Connect Plugin of CMSGears to access Facebook configuration.
