@@ -12,15 +12,12 @@ namespace cmsgears\widgets\social\feeds\instagram;
 //Yii Imports
 use yii\helpers\Html;
 
-// CMG Imports
-use cmsgears\core\common\base\Widget;
-
 /**
  * InstagramPosts shows the most recent posts of an user, published on Instagram.
  *
  * @since 1.0.0
  */
-class InstagramPosts extends Widget {
+class InstagramPosts extends \cmsgears\core\common\base\Widget {
 
 	// Variables ---------------------------------------------------
 
@@ -42,6 +39,11 @@ class InstagramPosts extends Widget {
 	public $wrap = true;
 
 	/**
+	 * @inheritdoc
+	 */
+	public $options = [ 'id' => 'social-feeds-instagram' ];
+
+	/**
 	 * Instgram Access Token is required to show posts.
 	 *
 	 * @var string
@@ -61,6 +63,11 @@ class InstagramPosts extends Widget {
 	 * @var string
 	 */
 	public $title = null;
+
+	/**
+	 * @inheritdoc
+	 */
+	public $autoloadUrl = 'core/autoload/instagram';
 
 	// Protected --------------
 
